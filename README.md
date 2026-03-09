@@ -226,7 +226,3 @@ npm run dev
 
 ---
 
-# End of README
-
-```
-

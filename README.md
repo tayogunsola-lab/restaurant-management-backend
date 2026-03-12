@@ -1,12 +1,12 @@
 # Restaurant Management Backend API
 
-## 📌 Project Overview
+## Project Overview
 This is a **Restaurant Management Backend API** built with **Node.js, Express.js, MySQL (Sequelize), MongoDB (Mongoose)**.  
 It supports user management, menu management, orders, reservations, reviews, and email notifications.
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 
@@ -53,7 +53,7 @@ restaurant-management-backend/
 
 ---
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 - **Node.js & Express.js** – Backend server  
 - **MySQL (Sequelize)** – Relational database for core data  
@@ -68,7 +68,7 @@ restaurant-management-backend/
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 1. Clone the repository:
 ```bash
@@ -117,7 +117,7 @@ npm run dev
 
 ---
 
-## 📌 API Endpoints
+##  API Endpoints
 
 ### **Authentication**
 
@@ -160,7 +160,7 @@ npm run dev
 
 ---
 
-## 🗄️ Database Structure
+##  Database Structure
 
 **MySQL Tables:**
 
@@ -176,7 +176,7 @@ npm run dev
 
 ---
 
-## 🧪 Testing Steps
+##  Testing Steps
 
 * Use **curl** or Postman to test all endpoints.
 * Ensure JWT authentication is included where required.
@@ -189,7 +189,7 @@ npm run dev
 
 ---
 
-## ✉️ Email Service
+##  Email Service
 
 * Configured via **Nodemailer** in `src/services/emailService.js`
 * Environment variables for host, port, user, password
@@ -204,7 +204,7 @@ npm run dev
 
 ---
 
-## 💡 Development Principles Applied
+##  Development Principles Applied
 
 * **MVC Architecture** – Clear separation of models, views (controllers), and routes
 * **SOLID Principles** – Each module has a single responsibility
@@ -217,7 +217,7 @@ npm run dev
 
 ---
 
-## ✅ Notes
+##  Notes
 
 * API fully tested with **curl and postman**.
 * Static files served via `/uploads`.
@@ -225,8 +225,4 @@ npm run dev
 * Ready for production deployment with proper environment variables.
 
 ---
-
-# End of README
-
-```
 

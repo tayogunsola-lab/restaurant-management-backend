@@ -7,6 +7,7 @@ const { connectMySQL } = require('./src/config/mysql');
 const { connectMongoDB } = require('./src/config/mongodb');
 const { errorHandler } = require('./src/middleware/errorMiddleware');
 const { logger } = require('./src/middleware/loggerMiddleware');
+const { swaggerUi, swaggerSpec } = require('./src/config/swagger');
 
 
 const authRoutes = require('./src/routes/authRoutes');
@@ -29,7 +30,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(logger);
-
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 const uploadsDir = path.join(__dirname, 'src', 'uploads');
 if (!fs.existsSync(uploadsDir)) {

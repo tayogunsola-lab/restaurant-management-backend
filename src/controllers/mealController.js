@@ -27,7 +27,7 @@ const createMeal = async (req, res, next) => {
 const getMeals = async (req, res, next) => {
   try {
     const meals = await Meal.findAll({
-      include: { model: Category, as: 'category', attributes: ['id', 'name'] } // ✅ alias included
+      include: { model: Category, as: 'category', attributes: ['id', 'name'] } 
     });
     res.status(200).json({ success: true, meals });
   } catch (error) {
@@ -38,7 +38,7 @@ const getMeals = async (req, res, next) => {
 const getMeal = async (req, res, next) => {
   try {
     const meal = await Meal.findByPk(req.params.id, {
-      include: { model: Category, as: 'category', attributes: ['id', 'name'] } // ✅ alias included
+      include: { model: Category, as: 'category', attributes: ['id', 'name'] } 
     });
     if (!meal) return res.status(404).json({ success: false, message: 'Meal not found' });
     res.status(200).json({ success: true, meal });
